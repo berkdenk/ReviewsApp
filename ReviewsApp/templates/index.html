@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - JS Project</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <main>
+        <section class="container">
+            <!--Title-->
+            <div class="title">
+                <h2>our reviews</h2>
+                <div class="underline"></div>
+            </div>
+            <!--review-->
+            <article class="title">
+                <div class="img-container">
+                    <img src="" alt="">
+                </div>
+                <h4 id='author'>Name Surname</h4>
+                <p id='job'>UX Designer</p>
+                <p id='info'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mi rhoncus augue sodales tristique egestas vel urna. Maecenas ac porta est. Cras quis ex nec quam vehicula efficitur eu in lacus. Nulla cursus mi nec congue vehicula. Nunc leo ante, mollis gravida efficitur vitae, dignissim eu elit. Nunc a orci non nibh hendrerit tempus. Phasellus dignissim velit sit amet libero viverra euismod. Donec eleifend finibus vehicula. Donec volutpat maximus sapien ut gravida. Donec luctus id leo ut finibus. </p>
+                <div class="button-container">
+                    <button class="prev-button" id="prev-button">
+                        <i class="fas fa-chevron-left"></i> 
+                    </button>
+                    <button class="next-button" id="next-button">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <button class="random-btn" id="random-btn">
+                    Suprise Me
+                </button>
+            </article>
+        </section>
+    </main>
+
+    <!--JS-->
+    <script src="{% static "js/index.js" %}"></script>
+</body>
+</html>

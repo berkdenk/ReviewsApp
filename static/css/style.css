@@ -1,0 +1,135 @@
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title h2 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+/* Temel düğme stilleri */
+.button-container button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block; /* Düğmeyi blok dışı eleman olarak ayarlar */
+    width: 150px; /* Düğmenin genişliği */
+    height: 40px; /* Düğmenin yüksekliği */
+    padding: 10px 20px; /* Düğme iç kenar boşluğu */
+    font-size: 16px; /* Yazı tipi boyutu */
+    text-align: center; /* Metni ortala */
+    text-decoration: none; /* Alt çizgi kaldırma */
+    border: 2px solid #3498db; /* Kenarlık */
+    border-radius: 5px; /* Kenar yuvarlatma */
+    color: #fff; /* Metin rengi */
+    background-color: #3498db; /* Arkaplan rengi */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #2980b9; /* Arkaplan rengini değiştir */
+    color: #fff; /* Metin rengini değiştir */
+}
+
+/* Düğmeye tıklandığında efekt */
+.button-container button:active {
+    background-color: #2980b9; /* Arkaplan rengini değiştir */
+    color: #fff; /* Metin rengini değiştir */
+    transform: translateY(1px); /* Düğmeyi aşağıya kaydır */
+}
+
+.random-btn {
+    display: block; /* Blok düğme */
+    width: 150px; /* Genişlik */
+    height: 40px; /* Yükseklik */
+    margin: 20px auto; /* Dikey ve yatay ortalamaya yerleştirme */
+    padding: 10px 20px; /* İç kenar boşluğu */
+    font-size: 16px; /* Yazı tipi boyutu */
+    text-align: center; /* Metni ortala */
+    text-decoration: none; /* Alt çizgi kaldırma */
+    border: 2px solid #3498db; /* Kenarlık */
+    border-radius: 5px; /* Kenar yuvarlatma */
+    color: #fff; /* Metin rengi */
+    background-color: #3498db; /* Arkaplan rengi */
+    transition: background-color 0.3s, color 0.3s; /* Geçiş efektleri */
+}
+
+/* Fare üzerine gelindiğinde efekt */
+.random-btn:hover {
+    background-color: #2980b9; /* Arkaplan rengini değiştir */
+    color: #fff; /* Metin rengini değiştir */
+}
+
+/* Tıklanma efekti */
+.random-btn:active {
+    background-color: #2980b9; /* Arkaplan rengini değiştir */
+    color: #fff; /* Metin rengini değiştir */
+    transform: translateY(1px); /* Düğmeyi aşağıya kaydır */
+}
+
+
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    background: #007bff;
+    margin: 0 auto;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+}
+
+#author {
+    margin-top: 10px; /* Yazar ismi üst boşluk */
+    font-size: 20px; /* Yazar ismi yazı tipi boyutu */
+    font-weight: bold; /* Yazar ismi kalınlık */
+}
+
+#job {
+    margin-top: 5px; /* İş ünvanı üst boşluk */
+    font-size: 16px; /* İş ünvanı yazı tipi boyutu */
+    font-style: italic; /* İş ünvanı italik */
+}
+
+#info {
+    margin-top: 10px; /* Bilgi paragrafı üst boşluk */
+    font-size: 14px; /* Bilgi paragrafı yazı tipi boyutu */
+    line-height: 1.6; /* Satır yüksekliği */
+}
